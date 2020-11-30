@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  margin: 20px 0 30px 20px;
+}
+
+header a {
+  display: inline-block;
+  width: 150px;
+  padding: 12px 0;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #47986d;
+  border: 1px solid #3c805b;
+}
+
+.nav-list {
+  position: relative;
+}
+
+.nav-list > li {
+  display: inline;
+}
+
+.nav-list li:hover > a {
+  background-color: #3c805b;
+}
+
+.categories-list,
+.women-list {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 150px;
+}
+
+.nav-list li:nth-child(2):hover .categories-list,
+.categories-list li:nth-child(2):hover .women-list {
+  display: block;
+}
